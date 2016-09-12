@@ -1,4 +1,9 @@
-import { Main } from './imports/server-main/main';
+import {loadWardrobe} from './imports/fixtures/wardrobe';
+import {Meteor} from 'meteor/meteor';
 
-let mainInstance = new Main();
-mainInstance.start();
+import './imports/publications/publications';
+
+Meteor.startup(() => {
+  // load initial Parties
+  loadWardrobe();
+});

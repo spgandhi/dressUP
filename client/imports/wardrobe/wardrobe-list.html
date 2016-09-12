@@ -1,0 +1,10 @@
+<login-buttons></login-buttons>
+<wardrobe-add></wardrobe-add>
+<div class="wardrobe-slider">
+  <ul>
+    <li *ngFor="let item of wardrobe">
+      <p>{{item.name}}</p>
+      <img src="{{item.url}}" class="wardrobe-img">
+    </li>
+  </ul>
+</div>

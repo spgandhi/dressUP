@@ -1,0 +1,9 @@
+<form [formGroup]="addForm" (ngSubmit)="addWardrobeItem()">
+  <label>Name</label>
+  <input type="text" formControlName="name">
+ 
+  <label>Description</label>
+  <input type="text" formControlName="url">
+ 
+  <button type="submit">Add</button>
+</form>
